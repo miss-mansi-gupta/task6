@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playflairdisplay;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#left {
+    width: 50%;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+#right {
+    width: 50%;
+    height: 100vh;
+    background: #de4139;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#img {
+    width: 1000px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+#img img {
+    width: 100%;
+    height: auto;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-left: 2%;
+    /* padding-right: 2%; */
+}
+
+#nav #logo {
+    width: 30%;
+    height: 100%;
+    /* padding-left: 2%; */
+}
+
+#nav #logo h1 {
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #fc6d6d;
+}
+
+#nav #menu1 {
+    width: 50%;
+    height: 100%;
+}
+
+#nav #menu1 ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 0 25%; */
+}
+
+#nav #menu1 ul li {
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+#nav #menu1 ul li:nth-last-child(1) {
+    transition-delay: 0;
+}
+
+#nav #menu1 ul li:nth-last-child(2) {
+    transition-delay: .2s;
+}
+
+#nav #menu1 ul li:nth-last-child(3) {
+    transition-delay: .4s;
+}
+
+#nav #menu2 {
+    width: 20%;
+    height: 100%;
+    /* padding-right: 1%; */
+}
+
+#nav #menu2 ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav #menu2 ul li {
+    line-height: 80px;
+    padding-left: 20px;
+    /* padding-right: 2%; */
+}
+
+#content {
+    position: absolute;
+    top: 160px;
+    left: 2%;
+    width: 30%;
+}
+
+#content h1 {
+    font-size: 47px;
+    letter-spacing: 5px;
+}
+
+#content p {
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+#content button {
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: #fc6d6d;
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+#media {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 2%;
+    bottom: 20px;
+}
+
+#media ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#media ul li {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    bottom: 0;
+}
+
+#media ul li:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#navigator {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 2%;
+    bottom: 20px;
+}
+
+#navigator ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+}
+
+#navigator ul li {
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 50px;
+    transition: .5s;
+}
+
+#navigator ul li:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#numb {
+    width: 40px;
+    height: 170px;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+#numb ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#numb ul li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.active::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+
+@keyframes animate {
+    0% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: 25%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+#left_s,
+#right_s {
+    margin-left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation-name: animate;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}

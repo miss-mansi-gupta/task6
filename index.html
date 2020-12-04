@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="all.js"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body  style="background: red;">
+<div class="water" id="particles-js" style="background: url(background.jpeg);background-size: cover;height: 100vh;width: 100vw;">
+<!--        <div id="left"></div>-->
+<!--    <div id="right"></div>-->
+
+    <div id="img">
+        <img src="girl.png" alt="">
+    </div>
+
+    <div id="nav">
+        <div id="logo">
+            <h1>Fash</h1>
+        </div>
+        <div id="menu1">
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+            </ul>
+        </div>
+        <div id="menu2">
+            <ul>
+                <li><i class="ri-search-line"></i></li>
+                <li><i class="ri-shopping-cart-2-fill"></i></li>
+                <li><i class="ri-list-check"></i></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="content">
+        <h1>Fashion is instant language</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, inventore consectetur necessitatibus magni dolor magnam temporibus dolorum provident aut tenetur ipsum ut explicabo cum! Fugit quod sed voluptate nulla architecto nihil debitis odio, culpa dicta.</p>
+        <button>Shop Now</button>
+    </div>
+
+    <div id="media">
+        <ul>
+            <li><i class="ri-facebook-circle-fill"></i></li>
+            <li><i class="ri-twitter-fill"></i></li>
+            <li><i class="ri-instagram-fill"></i></li>
+            <li><i class="ri-linkedin-box-fill"></i></li>
+        </ul>
+    </div>
+
+    <div id="navigator">
+        <ul>
+            <li><i class="ri-arrow-left-fill"></i>
+            </li>
+            <li><i class="ri-arrow-right-fill"></i></li>
+        </ul>
+    </div>
+
+
+    <div id="numb">
+        <ul>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+        
+    </div>
+
+<script src="js/particle.js"></script>
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 100,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": true,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "bubble"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 200,
+                "size": 20,
+                "duration": 1.6,
+                "opacity": 0.6,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('.water').ripples({
+//	resolution: 512,
+//	dropRadius: 20,
+//	perturbance: 0.04,
+        resolution: 200,
+        perturbance: .004,
+});
+});
+</script>
+
+</body>
+
+</html>
